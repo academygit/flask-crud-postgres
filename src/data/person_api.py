@@ -2,7 +2,7 @@ import psycopg2
 from config import config
 from flask import Flask, request
 # import logging
-from person_db import db_get_persons, db_get_person_by_id, db_create_person, db_update_person, db_delete_person 
+from person_service import db_get_persons, db_get_person_by_id, db_create_person, db_update_person, db_delete_person 
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
