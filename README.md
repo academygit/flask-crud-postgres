@@ -1,3 +1,7 @@
+# Clone repository
+git clone https://github.com/academygit/flask-crud-postgres.git
+cd flask-crud-postgres
+
 # Create a new database and table and insert demo data
     CREATE DATABASE RESTAPIDEMO;
 
@@ -20,7 +24,7 @@
 
 ## Create python virtual environment
     python -m venv venv
-    .\venv\Script\activate
+    .\venv\Scripts\activate
 
 ## Install libraries
     pip install -r requirements.txt

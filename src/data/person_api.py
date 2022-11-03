@@ -1,8 +1,6 @@
-import psycopg2
-from config import config
 from flask import Flask, request
-# import logging
 from person_service import db_get_persons, db_get_person_by_id, db_create_person, db_update_person, db_delete_person 
+
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
@@ -50,4 +48,9 @@ def delete_person(id):
     except:
         return {"error": "no such person"}
     
-app.run()
+@app.route('/attribute', methods=['GET'])
+def get_all_attributes():
+    return    
+
+if __name__ == "__main__":
+    app.run()
